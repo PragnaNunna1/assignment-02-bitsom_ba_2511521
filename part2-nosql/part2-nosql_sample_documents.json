@@ -1,0 +1,60 @@
+[
+  {
+    "_id": "P1001",
+    "name": "Samsung 55-inch 4K Smart TV",
+    "category": "Electronics",
+    "brand": "Samsung",
+    "price": 45999,
+    "stock": 15,
+    "specifications": {
+      "warranty_years": 2,
+      "voltage": "220V",
+      "screen_size": "55 inches",
+      "resolution": "4K UHD"
+    },
+    "features": ["Smart TV", "WiFi", "HDR", "Voice Control"],
+    "seller": {
+      "seller_id": "S201",
+      "seller_name": "ElectroWorld"
+    }
+  },
+  {
+    "_id": "P1002",
+    "name": "Men's Cotton Casual Shirt",
+    "category": "Clothing",
+    "brand": "Allen Solly",
+    "price": 1499,
+    "stock": 40,
+    "attributes": {
+      "size": ["M", "L", "XL"],
+      "color": "Blue",
+      "material": "Cotton",
+      "fit": "Regular"
+    },
+    "care_instructions": ["Machine wash", "Do not bleach"],
+    "seller": {
+      "seller_id": "S202",
+      "seller_name": "FashionHub"
+    }
+  },
+  {
+    "_id": "P1003",
+    "name": "Organic Full Cream Milk 1L",
+    "category": "Groceries",
+    "brand": "Amul",
+    "price": 68,
+    "stock": 120,
+    "expiry_date": "2024-12-20",
+    "nutritional_info": {
+      "calories": 62,
+      "protein_g": 3.2,
+      "fat_g": 3.5,
+      "calcium_mg": 120
+    },
+    "storage": {
+      "temperature": "Keep refrigerated",
+      "shelf_life_days": 7
+    },
+    "tags": ["Dairy", "Fresh", "Organic"]
+  }
+]

@@ -1,0 +1,9 @@
+## Database Recommendation
+
+For a healthcare startup building a patient management system, I would primarily recommend MySQL rather than MongoDB. Patient management involves highly structured and sensitive data such as patient profiles, appointments, prescriptions, billing records, and medical histories. These operations require strong consistency, reliability, and transactional integrity. MySQL follows ACID properties, which ensure that transactions are atomic, consistent, isolated, and durable. In a healthcare system, this is extremely important because incorrect or partially committed data could directly affect patient care and safety. For example, updating prescription details, laboratory reports, and payment records should happen accurately and predictably.
+
+MongoDB, on the other hand, is more aligned with BASE principles, which prioritize availability and flexibility over immediate consistency. It is useful when the data model is dynamic or semi-structured, but for core healthcare records, eventual consistency may introduce risk. Under the CAP theorem, healthcare systems usually favor consistency and partition tolerance over availability during failures, making relational databases a safer default choice.
+
+However, my answer would partially change if the startup also needed a fraud detection module. Fraud detection often involves large-scale, fast-changing, and semi-structured data such as logs, behavioral events, device information, and unusual transaction patterns. In that case, MongoDB can be a strong complementary choice because of its schema flexibility and ability to store diverse event data efficiently.
+
+Therefore, the best recommendation is MySQL for the main patient management system and MongoDB as a supporting database for fraud detection or analytics-related modules. A hybrid approach would provide both transactional safety and flexible scalability.
